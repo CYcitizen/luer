@@ -8,6 +8,7 @@
 
 <script>
 // @ is an alias to /src
+// @ 符号代表着 /src
 import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {

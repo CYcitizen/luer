@@ -1,6 +1,8 @@
 /*
   This file set all the different routes in this web site
   这个文件设置了此网站所有的路由
+  This file is use at /src/main.js
+  这个文件在 /sec/main.js 中使用
  */
 
 import { createRouter, createWebHistory } from 'vue-router'
@@ -21,6 +23,18 @@ const routes = [{
         // which is lazy-loaded when the route is visited.
         component: () =>
             import ( /* webpackChunkName: "about" */ '../views/About.vue')
+    },
+    {
+        path: '/listen',
+        name: 'Listen',
+        component: () =>
+            import ('../views/listen/Listen.vue')
+    },
+    {
+        path: '/listen:id',
+        name: 'VoiceDetails',
+        component: () =>
+            import ('../views/listen/VoiceDetails.vue')
     }
 ];
 // 实例化 routes
