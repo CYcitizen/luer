@@ -1,57 +1,31 @@
 <template>
-  <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <h1 class="test">大萝莉的网站</h1>
-
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
   </div>
+  <router-view />
 </template>
 
-
-
-<script>
-// import HelloWorld from './components/HelloWorld.vue'
-export default {
-  name: 'app',
-  data(){
-    return{
-
-    }
-  }
-
-  // components: {
-  //   HelloWorld
-  // }
-
-}
-</script>
-
-
-
-
-
-
 <style>
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 #app {
-
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* text-align: center; */
-  /* color: #2c3e50;
-  margin-top: 60px; */
-
+  text-align: center;
+  color: #2c3e50;
 }
-.test{
-  color: red;
-  font-size: 1.5rem;
+
+#nav {
+  padding: 30px;
+  background-color: bisque;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
