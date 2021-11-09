@@ -84,4 +84,70 @@
   font-size: 2.3rem;
   display: inline-block;
 }
+
+@media screen and (min-width: 400px) and (max-width: 570px) {
+  #nav h1 {
+    margin: 20px;
+    /* color: red; */
+    font-family: "SimpleScript";
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  #nav a {
+    /* background-color: #fff; */
+    font-family: "Moreland";
+    margin: 50px 25px;
+    font-size: 1rem;
+    letter-spacing: 0.3vw;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    /* border-radius: 15%; */
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  #nav h1 {
+    margin: 20px;
+    /* color: red; */
+    font-family: "SimpleScript";
+    font-size: 1.2rem;
+    display: inline-block;
+  }
+
+  #nav a {
+    /* background-color: #fff; */
+    font-family: "Moreland";
+    margin: 40px 10px;
+    font-size: 0.3rem;
+    letter-spacing: 0.1vw;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    /* border-radius: 15%; */
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  #nav h1 {
+    margin: 10px;
+    /* color: red; */
+    font-family: "SimpleScript";
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  #nav a {
+    /* background-color: #fff; */
+    font-family: "Moreland";
+    margin: 40px 10px;
+    font-size: 1rem;
+    letter-spacing: 0.1vw;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    /* border-radius: 15%; */
+  }
+}
 </style>
