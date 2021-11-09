@@ -6,15 +6,18 @@
   这个文件会在 /src/main.js 中使用到
  --------------------------------->
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <!-- 
+    <h1>DA Luo Li</h1>
+    <div class="links">
+      <router-link to="/">Home</router-link> |
+      <!-- 
       <router-link to="/about">About</router-link>
       相比写死到 /about 可以传入对象，
       那么 以后即使 path 改变也不用 一个一个页面的改
     -->
-    <router-link :to="{ name: 'Listen' }">Listen Now</router-link> |
-
-    <router-link :to="{ name: 'About' }">About</router-link>
+      <router-link :to="{ name: 'Listen' }">Listen Now</router-link> |
+      <router-link :to="{ name: 'Event' }">Events</router-link> |
+      <router-link :to="{ name: 'Support' }">Support</router-link>
+    </div>
   </div>
 
   <!----------------------------->
@@ -29,29 +32,56 @@
 </template>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #dfd0b9;
+}
+@font-face {
+  font-family: "SimpleScript";
+  src: url("./assets/font/SimpleScript-3.ttf");
+}
+@font-face {
+  font-family: "Moreland";
+  src: url("./assets/font/Moreland-3.ttf");
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  text-align: center;
 }
 
 #nav {
-  padding: 30px;
   /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
 }
 
 #nav a {
+  /* background-color: #fff; */
+  font-family: "Moreland";
+  margin: 50px 30px;
+  font-size: 1.2rem;
+  letter-spacing: 0.5vw;
   font-weight: bold;
   color: #2c3e50;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 15%;
+  /* border-radius: 15%; */
 }
 
 #nav a.router-link-exact-active {
-  color: snow;
-  background-color: #1975b3;
+  color: rgb(36, 22, 22);
+}
+#nav h1 {
+  margin: 20px;
+  /* color: red; */
+  font-family: "SimpleScript";
+  font-size: 2.3rem;
+  display: inline-block;
 }
 </style>

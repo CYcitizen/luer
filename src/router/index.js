@@ -16,13 +16,13 @@ const routes = [{
         component: Home
     },
     {
-        path: '/about',
-        name: 'About',
+        path: '/support',
+        name: 'Support',
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () =>
-            import ( /* webpackChunkName: "about" */ '../views/About.vue')
+            import ( /* webpackChunkName: "about" */ '../views/Support.vue')
     },
     {
         path: '/listen',
@@ -31,11 +31,47 @@ const routes = [{
             import ('../views/listen/Listen.vue')
     },
     {
+        path: '/event',
+        name: 'Event',
+        component: () =>
+            import ('../views/Event.vue')
+    },
+    {
         path: '/listen:id',
         name: 'VoiceDetails',
         component: () =>
-            import ('../views/listen/VoiceDetails.vue')
-    }
+            import ('../views/listen/VoiceDetails.vue'),
+        props: true
+    },
+
+
+    // ===========================
+    //          重定向 
+    // ===========================
+    // 为什么要重定向 ？
+    // 因为随着时间的推移，有些 url 会发生改变，我们要把一些过时的链接重定向到新的链接上去.
+    // 例如： https://www.daluoli.live/listenVoice  => https://www.daluoli.live/listen
+    {
+        path: '/listenVoice',
+        redirect: '/listen',
+        // 这样 /listenVoice 的路径就会重定向到 /listen
+
+    },
+
+    // ===========================
+    //          404 页面 
+    // ===========================
+    // 获取所有不存在的页面
+    {
+        path: '/:catAll(.*)',
+        name: 'NotFound',
+        component: () =>
+            import ('../views/NotFound.vue'),
+
+    },
+
+
+
 ];
 // 实例化 routes
 const router = createRouter({
