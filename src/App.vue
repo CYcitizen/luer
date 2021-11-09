@@ -38,6 +38,9 @@
   box-sizing: border-box;
   background-color: #dfd0b9;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 @font-face {
   font-family: "SimpleScript";
   src: url("./assets/font/SimpleScript-3.ttf");
@@ -55,7 +58,7 @@
 }
 
 #nav {
-  /* background-color: bisque; */
+  /* background-color: rgb(255, 143, 7); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -70,16 +73,29 @@
   font-weight: bold;
   color: #2c3e50;
   text-decoration: none;
+  display: inline-block;
+  padding-bottom: 2px;
+  background-image: linear-gradient(#000, #000);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s; /*change after the size immediately*/
 }
 
+#nav a:hover {
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
 #nav a.router-link-exact-active {
   color: rgb(36, 22, 22);
 }
 #nav h1 {
   /* color: red; */
+  /* background-color: #fff; */
   font-family: "SimpleScript";
-  font-size: 2rem;
+  font-size: 2.5rem;
   display: inline-block;
+  margin: 1vw;
 }
 
 @media screen and (min-width: 550px) and (max-width: 600px) {
