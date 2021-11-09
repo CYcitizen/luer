@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- <img class="logo" alt="luoli logo" src="../assets/logo.png" /> -->
+    <img class="logo" alt="luoli logo" src="../assets/logo.png" />
 
     <HelloWorld msg="Welcome 大萝莉's Website" />
   </div>

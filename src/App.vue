@@ -63,91 +63,63 @@
 }
 
 #nav a {
-  /* background-color: #fff; */
   font-family: "Moreland";
-  margin: 50px 30px;
-  font-size: 1.2rem;
+  margin: 0.1vw 2vw;
+  font-size: 1.5em;
   letter-spacing: 0.5vw;
   font-weight: bold;
   color: #2c3e50;
   text-decoration: none;
-  /* border-radius: 15%; */
 }
 
 #nav a.router-link-exact-active {
   color: rgb(36, 22, 22);
 }
 #nav h1 {
-  margin: 20px;
   /* color: red; */
   font-family: "SimpleScript";
-  font-size: 2.3rem;
+  font-size: 2rem;
   display: inline-block;
 }
 
-@media screen and (min-width: 400px) and (max-width: 570px) {
-  #nav h1 {
-    margin: 20px;
-    /* color: red; */
-    font-family: "SimpleScript";
-    font-size: 1.5rem;
-    display: inline-block;
-  }
-
+@media screen and (min-width: 550px) and (max-width: 600px) {
   #nav a {
-    /* background-color: #fff; */
-    font-family: "Moreland";
-    margin: 50px 25px;
-    font-size: 1rem;
-    letter-spacing: 0.3vw;
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
-    /* border-radius: 15%; */
-  }
-}
-
-@media screen and (min-width: 200px) and (max-width: 400px) {
-  #nav h1 {
-    margin: 20px;
-    /* color: red; */
-    font-family: "SimpleScript";
     font-size: 1.2rem;
-    display: inline-block;
   }
-
-  #nav a {
-    /* background-color: #fff; */
-    font-family: "Moreland";
-    margin: 40px 10px;
-    font-size: 0.3rem;
-    letter-spacing: 0.1vw;
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
-    /* border-radius: 15%; */
+  #nav h1 {
+    font-size: 1.8rem;
   }
 }
-
-@media screen and (min-width: 400px) and (max-width: 500px) {
-  #nav h1 {
-    margin: 10px;
-    /* color: red; */
-    font-family: "SimpleScript";
-    font-size: 1.5rem;
-    display: inline-block;
-  }
-
+@media screen and (min-width: 450px) and (max-width: 550px) {
   #nav a {
-    /* background-color: #fff; */
-    font-family: "Moreland";
-    margin: 40px 10px;
     font-size: 1rem;
-    letter-spacing: 0.1vw;
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
-    /* border-radius: 15%; */
+  }
+  #nav h1 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  #nav a {
+    font-size: 0.8rem;
+  }
+  #nav h1 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 350px) {
+  #nav a {
+    font-size: 0.6rem;
+  }
+  #nav h1 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 150px) and (max-width: 250px) {
+  #nav a {
+    font-size: 0.4rem;
+  }
+  #nav h1 {
+    font-size: 1rem;
   }
 }
 </style>
