@@ -1,4 +1,7 @@
 <template>
+  <!-- ===================================================================================== -->
+  <!--                                   Head 头部                                           -->
+  <!-- ===================================================================================== -->
   <!-------------------------------
   this file is the root components
   这个文件是网站的根 component
@@ -29,6 +32,19 @@
     这个地方就是 注入页面的地方
    -->
   <router-view />
+
+  <!-- ===================================================================================== -->
+  <!--                                   Footer 尾部                                         -->
+  <!-- ===================================================================================== -->
+  <div id="footer">
+    <div>
+      <p>
+        Developer clay. Clay's blog:
+        <a target="blank" href="https://blog.clayliu.com/">clay</a>
+      </p>
+    </div>
+    <p>© 2021 by 大萝莉 and clayliu. All Rights Reserved.</p>
+  </div>
 </template>
 
 <style>
@@ -36,6 +52,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
   background-color: #dfd0b9;
 }
 body::-webkit-scrollbar {
@@ -97,13 +115,32 @@ body::-webkit-scrollbar {
   display: inline-block;
   margin: 1vw;
 }
-
+#footer {
+  height: 10vh;
+  width: 50%;
+  margin: 0 auto;
+  /* background-color: tomato; */
+  position: relative;
+  border-top: 2px solid #000000;
+  top: 100vh;
+}
+#footer p {
+  /* background-color: red; */
+  color: #2c3e50;
+  font-size: 1.2rem;
+  display: in;
+  margin: 5px, 10px;
+  font-family: "Moreland";
+}
 @media screen and (min-width: 550px) and (max-width: 600px) {
   #nav a {
     font-size: 1.2rem;
   }
   #nav h1 {
     font-size: 1.8rem;
+  }
+  #footer {
+    width: 75%;
   }
 }
 @media screen and (min-width: 450px) and (max-width: 550px) {
@@ -113,6 +150,9 @@ body::-webkit-scrollbar {
   #nav h1 {
     font-size: 1.6rem;
   }
+  #footer {
+    width: 80%;
+  }
 }
 @media screen and (min-width: 350px) and (max-width: 450px) {
   #nav a {
@@ -120,6 +160,9 @@ body::-webkit-scrollbar {
   }
   #nav h1 {
     font-size: 1.4rem;
+  }
+  #footer {
+    width: 95%;
   }
 }
 @media screen and (min-width: 250px) and (max-width: 350px) {
@@ -129,6 +172,9 @@ body::-webkit-scrollbar {
   #nav h1 {
     font-size: 1.2rem;
   }
+  #footer {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 150px) and (max-width: 250px) {
   #nav a {
@@ -136,6 +182,9 @@ body::-webkit-scrollbar {
   }
   #nav h1 {
     font-size: 1rem;
+  }
+  #footer {
+    width: 100%;
   }
 }
 </style>
