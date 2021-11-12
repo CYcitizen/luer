@@ -1,12 +1,13 @@
 <template>
   <div class="home">
-    <img
+    <!-- <img
       class="logo"
       alt="luoli logo"
       src="https://z3.ax1x.com/2021/11/10/IdVQJJ.png"
-    />
+    /> -->
 
-    <HelloWorld msg="Welcome 大萝莉's Website" />
+    <!-- <HelloWorld msg="Welcome 大萝莉's Website" /> -->
+    <VoiceWave />
   </div>
 </template>
 
@@ -14,11 +15,13 @@
 // @ is an alias to /src
 // @ 符号代表着 /src
 import HelloWorld from "@/components/HelloWorld.vue";
+import VoiceWave from "@/components/VoiceWave.vue";
 
 export default {
   name: "Home",
   components: {
     HelloWorld,
+    VoiceWave,
   },
 };
 </script>

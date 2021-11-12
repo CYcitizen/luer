@@ -1,6 +1,15 @@
 <template>
   <h1>This is the listen page</h1>
   <h1>播单</h1>
+  <PlayList />
+  <PlayList />
+  <PlayList />
+  <PlayList />
+  <PlayList />
+  <PlayList />
+  <PlayList />
+  <PlayList />
+
   <div v-for="content in contents" :key="content.id">
     <router-link :to="{ name: 'VoiceDetails', params: { id: content.id } }">
       <h4>{{ content.title }}</h4>
@@ -9,6 +18,8 @@
 </template>
 
 <script>
+import PlayList from "@/components/PlayList.vue";
+
 export default {
   data() {
     return {
@@ -20,6 +31,10 @@ export default {
         { title: "英语场景词汇及句子", id: 5, detail: "大萝莉你来学英语..." },
       ],
     };
+  },
+  // =====
+  components: {
+    PlayList,
   },
 };
 </script>
