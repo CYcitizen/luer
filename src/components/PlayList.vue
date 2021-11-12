@@ -11,10 +11,7 @@
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat,
         nostrum dicta modi quae suscipit error placeat dolores itaque
-        praesentium consequatur totam dolor expedita voluptate, doloribus nisi
-        possimus incidunt sequi recusandae. Aspernatur laboriosam ut inventore
-        blanditiis quo fugit itaque, natus provident deleniti, ad voluptas
-        similique adipisci accusamus maxime dolorem nobis.
+        praesentium consequatur
       </p>
     </div>
   </div>
@@ -72,6 +69,13 @@
     height: 130px;
     margin: 15px auto;
   }
+  #description h2 {
+    font-size: 10px;
+    margin-right: 70%;
+  }
+  #description p {
+    font-size: 10px;
+  }
 }
 
 @media screen and (min-width: 400px) and (max-width: 600px) {
@@ -80,12 +84,26 @@
     height: 110px;
     margin: 15px auto;
   }
+  #description h2 {
+    font-size: 10px;
+    margin-right: 70%;
+  }
+  #description p {
+    font-size: 10px;
+  }
 }
 @media screen and (min-width: 300px) and (max-width: 400px) {
   #play-list {
     width: 360px;
     height: 85px;
     margin: 15px auto;
+  }
+  #description h2 {
+    font-size: 10px;
+    margin-right: 70%;
+  }
+  #description p {
+    font-size: 10px;
   }
 }
 </style>
