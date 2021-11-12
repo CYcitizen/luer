@@ -43,5 +43,29 @@
   /* background-color: aquamarine; */
   width: 20%;
   height: 90%;
+  margin: 0 4%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  #play-list {
+    width: 600px;
+    height: 130px;
+    margin: 15px auto;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  #play-list {
+    width: 500px;
+    height: 110px;
+    margin: 15px auto;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  #play-list {
+    width: 360px;
+    height: 85px;
+    margin: 15px auto;
+  }
 }
 </style>
