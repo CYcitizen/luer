@@ -6,8 +6,16 @@
 
   <div id="play-list">
     <img id="title-img" src="../assets/logo.png" alt="" srcset="" />
-    <div id="deciption">
-      <h3>test title</h3>
+    <div id="description">
+      <h2>test title</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat,
+        nostrum dicta modi quae suscipit error placeat dolores itaque
+        praesentium consequatur totam dolor expedita voluptate, doloribus nisi
+        possimus incidunt sequi recusandae. Aspernatur laboriosam ut inventore
+        blanditiis quo fugit itaque, natus provident deleniti, ad voluptas
+        similique adipisci accusamus maxime dolorem nobis.
+      </p>
     </div>
   </div>
 </template>
@@ -22,7 +30,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   padding-bottom: 3px;
   background-image: linear-gradient(rgb(95, 64, 37), rgb(95, 64, 37));
   background-position: 0 100%; /*OR bottom left*/
@@ -31,13 +38,26 @@
   transition: background-size 0.3s, background-position 0s 0.3s; /*change after the size immediately*/
 }
 #play-list:hover {
-  /* transform: translateY(-5px); */
-  /* translate: 0.3s; */
+  transform: translateY(-5px);
+  translate: 0.3s;
   background-position: 50% 100%; /*OR bottom right*/
   background-size: 100% 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-#play-list h3 {
+#description {
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(60, 117, 49); */
+}
+
+#description h2 {
   /* background-color: blue; */
+  display: inline-block;
+  margin-right: 80%;
+}
+#description p {
+  margin: 5% 3%;
 }
 #title-img {
   /* background-color: aquamarine; */
