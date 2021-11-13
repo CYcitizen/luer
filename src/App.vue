@@ -122,7 +122,7 @@ body::-webkit-scrollbar {
   /* background-color: tomato; */
   position: relative;
   border-top: 2px solid #000000;
-  top: 100vh;
+  top: 10vh;
 }
 #footer p {
   /* background-color: red; */

@@ -1,5 +1,5 @@
 /*
-    this file set up 
+    this file set up app
 */
 
 // 使用 vue 中的 createApp
