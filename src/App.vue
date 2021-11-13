@@ -52,6 +52,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* make the text unselectable */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 body {
   background-color: #dfd0b9;
