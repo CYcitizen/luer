@@ -1,6 +1,5 @@
 <template>
-  <h1>This is the listen page</h1>
-  <h1>播单</h1>
+  <h1 class="subtitle">*** PlayList ***</h1>
   <PlayList />
   <PlayList />
   <PlayList />
@@ -38,3 +37,11 @@ export default {
   },
 };
 </script>
+
+<style>
+.subtitle {
+  font-weight: 100;
+  margin: 3% 0;
+  /* text-decoration: underline; */
+}
+</style>

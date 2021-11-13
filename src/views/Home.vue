@@ -9,32 +9,33 @@
     <!-- <HelloWorld msg="Welcome 大萝莉's Website" /> -->
 
     <div id="section">
-      <VoiceWave />
       <div id="HearNow">
-        <h1>this is hearNow part</h1>
+        <!-- <h1>this is hearNow part</h1> -->
+        <img src="../assets/1.png" />
       </div>
+      <VoiceWave />
     </div>
 
     <div id="section">
       <div id="daluoli">
-        <h1>this is 大萝莉 intro part</h1>
+        <h1>* Who is Da luo li ?</h1>
       </div>
     </div>
 
     <div id="section">
       <div id="intro">
-        <h1>this is Website intro part</h1>
+        <h1>* What is this Website for ?</h1>
       </div>
     </div>
 
     <div id="section">
       <div id="clay">
-        <h1>this is Clay intro part</h1>
+        <h1>* Who is Clay ?</h1>
       </div>
     </div>
     <div id="section">
       <div id="more">
-        <h1>this is more fridend intro part</h1>
+        <h1>* You may like</h1>
       </div>
     </div>
   </div>
@@ -56,6 +57,14 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "Moreland";
+  src: url("../assets/font/Moreland-3.ttf");
+}
+h1 {
+  font-family: "Moreland";
+  font-size: 2.5rem;
+}
 #section {
   display: flex;
   flex-direction: row;
@@ -65,33 +74,51 @@ export default {
 #HearNow {
   height: 500px;
   width: 500px;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
+}
+#HearNow img {
+  height: 100%;
+  margin-top: 10%;
 }
 
 #daluoli {
   height: 500px;
   width: 1000px;
-  background-color: rgb(153, 152, 228);
+  /* background-color: rgb(153, 152, 228); */
 }
-
+#daluoli h1 {
+  margin-top: 20%;
+  text-decoration: underline;
+  /* letter-spacing: 8px; */
+  font-weight: 100;
+}
 #intro {
   height: 500px;
   width: 1000px;
-  background-color: rgb(109, 95, 160);
+  /* background-color: rgb(109, 95, 160); */
 }
-
+#intro h1 {
+  font-weight: 100;
+  text-decoration: underline;
+}
 #clay {
   height: 500px;
   width: 1000px;
-  background-color: rgb(152, 197, 81);
+  /* background-color: rgb(152, 197, 81); */
 }
-
+#clay h1 {
+  text-decoration: underline;
+  font-weight: 100;
+}
 #more {
   height: 500px;
   width: 1000px;
-  background-color: rgb(98, 196, 89);
+  /* background-color: rgb(98, 196, 89); */
 }
-
+#more h1 {
+  text-decoration: underline;
+  font-weight: 100;
+}
 @media screen and (min-width: 960px) and (max-width: 1200px) {
   .logo {
     width: 50%;

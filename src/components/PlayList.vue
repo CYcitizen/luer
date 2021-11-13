@@ -13,6 +13,7 @@
         nostrum dicta modi quae suscipit error placeat dolores itaque
         praesentium consequatur
       </p>
+      <a href="">现在就听</a>
     </div>
   </div>
 </template>
